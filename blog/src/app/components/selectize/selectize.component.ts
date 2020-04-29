@@ -10,8 +10,8 @@ import {DataService} from '../../services/data.service';
 })
 export class SelectizeComponent implements AfterViewInit  {
 
-  @ViewChild('input') input: ElementRef;
-  public posts$
+  @ViewChild('input', { static: true }) input: ElementRef;
+  public posts$;
 
   constructor(private dataService: DataService) { }
 
