@@ -11,6 +11,7 @@ export class BlogComponent implements OnInit {
 
   public items$: any;
   @Input() filterText: string;
+  createPost = false;
 
   constructor(private service: DataService) { }
 
@@ -22,6 +23,10 @@ export class BlogComponent implements OnInit {
     this.service.getAll().subscribe(response => {
       this.items$ = response;
     });
+  }
+
+  create() {
+    this.createPost = true;
   }
 
 }

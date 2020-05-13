@@ -13,7 +13,7 @@ export class AddPostComponent implements OnInit {
     title: '',
     url: '',
     content: '',
-  }
+  };
 
   constructor(private dataService: DataService, private router: Router) { }
 
