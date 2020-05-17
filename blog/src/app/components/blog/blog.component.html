@@ -1,7 +1,4 @@
 <body>
-  <div>
-    <a [routerLink]="['/add-post']">Create new post</a>
-  </div>
   <selectize></selectize>
   <div *ngFor="let item of items$ | filter:filterText">
     <blog-item [id]="item.id" [image]="item.url" [text]="item.content">
