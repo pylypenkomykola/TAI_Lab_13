@@ -12,4 +12,7 @@
     <a class="nav-link" [routerLink]="['../contact']">Contact</a>
   </li>
 </ul>
-<button (click)="logOut()" class="dropdown-item">Wyloguj</button>
+<a class="nav-link" routerLink="/login" *ngIf="!authService.isLoggedIn()">Zaloguj</a>
+<a class="nav-link" (click)="logOut()" *ngIf="authService.isLoggedIn()">Wyloguj</a>
+<a class="nav-link" routerLink="/signup" *ngIf="!authService.isLoggedIn()">Zarejestruj</a>
+

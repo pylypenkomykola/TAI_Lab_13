@@ -4,7 +4,9 @@ import {JwtHelper} from 'angular2-jwt';
 import {map} from 'rxjs/operators';
 import {Token} from '../models/token';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class AuthService {
   private url = 'http://localhost:3000/api';
 

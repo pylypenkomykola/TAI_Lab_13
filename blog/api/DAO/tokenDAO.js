@@ -16,8 +16,7 @@ const tokenTypes = [tokenTypeEnum.authorization];
 const tokenSchema = new mongoose.Schema({
   userId:     { type: mongoose.Schema.Types.ObjectId, ref: 'user', required: true },
   createDate: { type: Number, required: true },
-  type:       { type: String, enum: tokenTypeEnum, required: true }
-}, {
+  type:       { type: String, enum: tokenTypes, required: true },
   value: { type: String, required: true }
 }, {
   collection: 'token'

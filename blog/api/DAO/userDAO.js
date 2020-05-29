@@ -1,3 +1,5 @@
+'use strict';
+
 import * as _ from 'lodash';
 import Promise from 'bluebird';
 import mongoose from 'mongoose';
