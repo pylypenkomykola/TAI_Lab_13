@@ -19,6 +19,7 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'blog',
@@ -31,7 +32,8 @@ const routes: Routes = [
   },
   {
     path: 'add-post',
-    component: AddPostComponent
+    component: AddPostComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'login',
