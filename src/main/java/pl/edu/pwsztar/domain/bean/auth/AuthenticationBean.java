@@ -1,9 +1,9 @@
-package pl.edu.pwsztar.domain.dto;
+package pl.edu.pwsztar.domain.bean.auth;
 
-public class HelloWorldBean {
+public class AuthenticationBean {
     private String message;
 
-    public HelloWorldBean(String message) {
+    public AuthenticationBean(String message) {
         this.message = message;
     }
 
@@ -15,7 +15,6 @@ public class HelloWorldBean {
         this.message = message;
     }
 
-    @Override
     public String toString() {
         return String.format("HelloWorldBean [message=%s]", message);
     }

@@ -1,7 +1,7 @@
 package pl.edu.pwsztar.controler;
 
 import org.springframework.web.bind.annotation.*;
-import pl.edu.pwsztar.domain.dto.HelloWorldBean;
+import pl.edu.pwsztar.domain.bean.HelloWorldBean;
 
 
 @RestController

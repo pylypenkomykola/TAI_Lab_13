@@ -10,8 +10,7 @@ class TaiLab13ApplicationTests {
 
 	@Test
 	void contextLoads() {
-		PostService postService = new PostServiceImpl();
-		System.out.println(postService.getAll());
+
 	}
 
 }
