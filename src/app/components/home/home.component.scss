@@ -1,22 +1,17 @@
-
-
-select{
-  width : 250px;
-  height: 50px;
-}
-
-
-li{
-  display : inline;
-}
-
 body {
   background-color : yellow;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  flex-flow: wrap column;
 }
 
 .bottom {
+  background-color:rgba(0, 0, 0, 0.5);
   display : flex;
-  align-content : flex-end;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .navigation {
@@ -36,44 +31,8 @@ body {
   cursor: pointer;
 }
 
-.correct {
-  background-color: #289a27;
-}
-
-.incorrect {
-  background-color: #c41a21;
-}
-
-.buttons {
-  padding: 10px 10px 10px 0;
-}
-.progressbar{
-  height: 20px;
-  width: 100%;
-}
-
-
-.start-button{
-  display : flex;
-  background-color : chartreuse;
-  width : 800px;
-  height : 100px;
-  justify-content: center;
-  align-items:center;
-  font-size : 40px;
-  border-width:4px;
-}
-
-.result-button{
-  width : 400px;
-  height : 50px;
-  background-color : chartreuse;
-}
-
-.buttons{
+.home-text {
   display: flex;
-  flex:1;
-  bottom: 100px;
   justify-content: center;
-  align-items:center;
 }
+

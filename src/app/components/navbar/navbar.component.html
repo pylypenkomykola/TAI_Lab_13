@@ -1,4 +1,4 @@
-<ul class="nav justify-content-center">
+<ul class="nav justify-content-center" style="background-color:greenyellow">
   <li class="nav-item">
     <a class="nav-link" [routerLink]="['']">Home</a>'
   </li>
@@ -11,8 +11,14 @@
   <li class="nav-item">
     <a class="nav-link" [routerLink]="['../contact']">Contact</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/login" *ngIf="!authService.isLoggedIn()">Zaloguj</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" (click)="logOut()" *ngIf="authService.isLoggedIn()">Wyloguj</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/signup" *ngIf="!authService.isLoggedIn()">Zarejestruj</a>
+  </li>
 </ul>
-<a class="nav-link" routerLink="/login" *ngIf="!authService.isLoggedIn()">Zaloguj</a>
-<a class="nav-link" (click)="logOut()" *ngIf="authService.isLoggedIn()">Wyloguj</a>
-<a class="nav-link" routerLink="/signup" *ngIf="!authService.isLoggedIn()">Zarejestruj</a>
 

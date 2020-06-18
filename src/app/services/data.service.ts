@@ -7,7 +7,7 @@ import {Observable} from 'rxjs';
 })
 export class DataService {
 
-  private url = 'https://apiblogtai.herokuapp.com';
+  private url = 'http://localhost:8080';
 
   constructor(private http: HttpClient) { }
 
